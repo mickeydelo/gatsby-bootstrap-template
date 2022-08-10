@@ -9,8 +9,11 @@ import Hero from "../components/hero"
 const IndexPage = () => {
   return (
     <Layout>
+      {/* SEO Component */}
       <Seo title="Home" />
+      {/* Hero Component */}
       <Hero />
+      {/* Bootstrap Section*/}
       <section className="py-5 text-center container">
         <div className="row py-lg-5">
           <div className="col-lg-6 col-md-8 mx-auto">
@@ -33,6 +36,7 @@ const IndexPage = () => {
         </div>
         
       </section>
+
     </Layout>
   )
 }
