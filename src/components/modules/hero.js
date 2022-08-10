@@ -8,7 +8,7 @@ const Hero = () => {
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
           <div class="col-10 col-sm-8 col-lg-6">
           <StaticImage
-              src="../images/gatsby-astronaut.png"
+              src="../../images/gatsby-astronaut.png"
               width={700}
               quality={95}
               formats={["AUTO", "WEBP"]}

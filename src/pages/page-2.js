@@ -3,10 +3,14 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import Button from 'react-bootstrap/Button';
 
-const SecondPage = () => (
+const SecondPage = () => {
+  return (
   <Layout>
     <Seo title="Page two" />
+
+    <Button variant="primary">Primary</Button>
 
     <div className="container text-center my-5">
       <h1>Hi from the second page</h1>
@@ -14,7 +18,6 @@ const SecondPage = () => (
       <Link to="/">Go back to the homepage</Link>
     </div>
 
-    {/* Featured Text */}
     <div class="container px-4 py-5">
       <h2 class="pb-2 border-bottom">Columns with icons</h2>
       <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
@@ -191,5 +194,6 @@ const SecondPage = () => (
 
   </Layout>
 )
+}
 
 export default SecondPage

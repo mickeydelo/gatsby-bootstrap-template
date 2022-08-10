@@ -4,16 +4,13 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import Hero from "../components/hero"
+import Hero from "../components/modules/hero"
 
 const IndexPage = () => {
   return (
     <Layout>
-      {/* SEO Component */}
       <Seo title="Home" />
-      {/* Hero Component */}
       <Hero />
-      {/* Bootstrap Section*/}
       <section className="py-5 text-center container">
         <div className="row py-lg-5">
           <div className="col-lg-6 col-md-8 mx-auto">
@@ -29,14 +26,11 @@ const IndexPage = () => {
             />
           </div>
         </div>
-
         <div className="row">
           <Link to="/about/" className="btn btn-primary my-2">About</Link>
           <Link to="/page-2/" className="btn btn-secondary my-2">Go to page 2</Link>
         </div>
-        
       </section>
-
     </Layout>
   )
 }

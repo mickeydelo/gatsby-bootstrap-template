@@ -6,12 +6,16 @@
 
 // /* Custom Globals */
 @import "vars/root";
+@import "vars/variables";
 @import "fonts/georgia";
 @import "fonts/source-sans-pro";
 @import 'global/typography.scss';
 @import 'global/layout.scss';
 @import 'global/footer.scss';
 @import 'global/nav.scss';
+
+// /* Custom Components */
+@import "global/components/carousel";
 
 // /* Custom Classing and Util */
 @import 'ui/anchor.scss';

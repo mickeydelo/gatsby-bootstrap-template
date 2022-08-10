@@ -8,8 +8,8 @@ import Seo from "../components/seo"
 const AboutPage = () => {
   return (
   <Layout>
-    <Seo title="About Gatsby Bootsrap 5 starter" />
-    <div className="container  my-5">
+    <Seo title="About" />
+    <div className="container my-5">
 
       <article class="my-3" id="navs">
       <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
