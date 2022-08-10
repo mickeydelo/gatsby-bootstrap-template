@@ -14,7 +14,7 @@ const IndexPage = () => {
       <section className="py-5 text-center container">
         <div className="row py-lg-5">
           <div className="col-lg-6 col-md-8 mx-auto">
-            <h1 className="fw-light">Hello world !</h1>
+            <h1 className="fw-light">Hello world!</h1>
             <p className="lead text-muted">Company Name</p>
             <StaticImage
               src="../images/gatsby-astronaut.png"
