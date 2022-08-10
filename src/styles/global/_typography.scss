@@ -1,0 +1,117 @@
+@import "../vars/fonts";
+@import "../customTheme";
+
+// https://nekocalc.com/px-to-rem-converter
+
+.accented-header-text{
+  @extend h1;
+  opacity:    0.2;
+  font-style: italic;
+  color:      var(--nuv-black);
+}
+
+.subheader-text{
+  font-family:    $source-sans-pro-font-family !important;
+  font-size:      $font-size-base * 1.75; // 28px
+  font-weight:    normal;
+  font-stretch:   normal;
+  font-style:     normal;
+  line-height:    normal;
+  letter-spacing: normal;
+  color:          var(--nuv-black);
+}
+
+.subheader-text-small{
+  @extend .subheader-text;
+  font-size:   $font-size-base * 1.125; //18px;
+  font-weight: 600;
+}
+
+.copy-text-presentational{
+  font-family:    $source-sans-pro-font-family;
+  font-size:      $font-size-base * 1.313; //21px;
+  font-weight:    300;
+  font-stretch:   normal;
+  font-style:     normal;
+  line-height:    normal;
+  letter-spacing: normal;
+  color:          var(--nuv-black);
+}
+
+.copy-text-presentational-small{
+  @extend .copy-text-presentational;
+  font-size: 16px;
+}
+
+.copy-text-info{
+  font-family:    $source-sans-pro-font-family;
+  font-size:      $font-size-base * 1.125; //18px;
+  font-weight:    normal;
+  font-stretch:   normal;
+  font-style:     normal;
+  line-height:    normal;
+  letter-spacing: normal;
+  color:          var(--nuv-black);
+}
+
+.footer-nav-links a, .footer-nav-link{
+  font-family:     $georgia-font-family;
+  font-size:       $font-size-base;
+  font-weight:     bold;
+  font-stretch:    normal;
+  font-style:      normal;
+  line-height:     normal;
+  letter-spacing:  normal;
+  text-decoration: none;
+  color:           var(--nuv-white);
+  
+  &:hover{
+	opacity: 0.85;
+	color:   var(--nuv-white);
+  }
+}
+
+.data-table-header{
+  font-family:    $georgia-font-family;
+  font-size:      $font-size-base * 0.938; //15px;
+  font-weight:    bold;
+  font-stretch:   normal;
+  font-style:     italic;
+  line-height:    normal;
+  letter-spacing: normal;
+  color:          var(--nuv-white);
+}
+
+.data-table-text{
+  font-family:    $source-sans-pro-font-family;
+  font-size:      $font-size-base * 0.875; //14px;
+  font-weight:    600;
+  font-stretch:   normal;
+  font-style:     normal;
+  line-height:    normal;
+  letter-spacing: normal;
+  color:          var(--nuv-black);
+}
+
+.control-label{
+  font-family:    $source-sans-pro-font-family;
+  font-size:      $font-size-base * 0.813; //13px;
+  font-weight:    600;
+  font-stretch:   normal;
+  font-style:     normal;
+  line-height:    normal;
+  letter-spacing: normal;
+  color:          var(--nuv-near-black);
+}
+
+.label-slug,
+.date-slug{
+  font-family:    $georgia-font-family;
+  font-size:      $font-size-base * 0.938; //15px;
+  font-weight:    bold;
+  font-stretch:   normal;
+  font-style:     italic;
+  line-height:    normal;
+  letter-spacing: normal;
+  color:          var(--nuv-steel) !important;
+}

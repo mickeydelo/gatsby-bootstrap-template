@@ -1,0 +1,128 @@
+@import "../../../node_modules/bootstrap/scss/mixins/buttons";
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../vars/colors";
+@import "../customTheme";
+
+/*
+  button-variant(
+    $background,
+    $border,
+    $color: color-contrast($background),
+    $hover-background: if($color == $color-contrast-light, shade-color($background, $btn-hover-bg-shade-amount), tint-color($background, $btn-hover-bg-tint-amount)),
+    $hover-border: if($color == $color-contrast-light, shade-color($border, $btn-hover-border-shade-amount), tint-color($border, $btn-hover-border-tint-amount)),
+    $hover-color: color-contrast($hover-background),
+    $active-background: if($color == $color-contrast-light, shade-color($background, $btn-active-bg-shade-amount), tint-color($background, $btn-active-bg-tint-amount)),
+    $active-border: if($color == $color-contrast-light, shade-color($border, $btn-active-border-shade-amount), tint-color($border, $btn-active-border-tint-amount)),
+    $active-color: color-contrast($active-background),
+    $disabled-background: $background,
+    $disabled-border: $border,
+    $disabled-color: color-contrast($disabled-background)
+  );
+*/
+
+/* Primary Button on Light Dark */
+.btn-primary{
+  @include button-variant(
+				  $primary,
+				  $primary,
+				  $nuv-white,
+				  lighten($primary, 5%),
+				  lighten($primary, 5%),
+				  $nuv-white,
+  );
+  color:        $nuv-white;
+  border-style: none;
+}
+
+/* Primary Button on Light Ground */
+.btn-outline-primary{
+  @include button-variant(
+				  transparent,
+				  $primary,
+				  $primary,
+				  transparent,
+				  lighten($primary, 15%),
+				  lighten($primary, 15%),
+  );
+  color: $primary;
+}
+
+/* Secondary Button on Dark Ground */
+.btn-secondary{
+  @include button-variant(
+				  transparent,
+				  $nuv-white,
+				  $nuv-white,
+				  transparent,
+				  rgba(255, 255, 255, 0.6),
+				  $nuv-white,
+  );
+  color: $nuv-white;
+}
+
+/* Secondary Button on Light Ground */
+.btn-outline-secondary{
+  @include button-variant(
+				  transparent,
+				  $nuv-dark-navy-blue,
+				  $nuv-dark-navy-blue,
+				  transparent,
+				  lighten($nuv-dark-navy-blue, 35%),
+				  lighten($nuv-dark-navy-blue, 35%),
+  );
+  color: $nuv-dark-navy-blue;
+}
+
+/* Primary Button on Bright Ground */
+.btn-primary-contrasted{
+  @include button-variant(
+				  $nuv-dark-navy-blue,
+				  $nuv-dark-navy-blue,
+				  color-contrast($nuv-dark-navy-blue),
+				  lighten($nuv-dark-navy-blue, 5%),
+				  lighten($nuv-dark-navy-blue, 5%),
+				  $nuv-white
+  );
+  color: $nuv-white;
+  border-style: none;
+}
+
+/* Secondary Button on Bright Ground */
+.btn-secondary-contrasted{
+  @extend .btn-secondary;
+  /*@include button-variant(
+				  transparent,
+				  $nuv-white,
+				  $nuv-white,
+				  transparent,
+				  rgba(255, 255, 255, 0.6),
+				  $nuv-white,
+  );
+  color: $nuv-white;*/
+}
+
+.btn {
+	border-radius: 0;
+	text-transform: capitalize;
+	border-color: var(--nuv-dark-navy-blue);
+	padding: 0.8rem 1.3rem;
+	font-size: 1rem;
+	color: var(--nuv-dark-navy-blue);
+  }
+  
+  .btn:hover {
+	border-color: var(--nuv-orange);
+	color: var(--nuv-orange);
+  }
+  
+  .btn-primary {
+	background: var(--nuv-orange);
+	color: #fff;
+	border-color: var(--nuv-orange);
+  }
+  
+  .btn-primary:hover {
+	background: var(--nuv-dark-navy-blue);
+	border-color: var(--nuv-white);
+	color: var(--nuv-white);
+  }

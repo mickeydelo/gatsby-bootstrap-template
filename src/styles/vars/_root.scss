@@ -1,0 +1,26 @@
+@import "../../../node_modules/bootstrap/scss/root";
+@import "colors";
+
+/* Exposed Root Vars */
+:root{
+  @extend :root;
+  --nuv-orange:           #{ $nuv-orange };
+  --nuv-dusty-orange:     #{ $nuv-dusty-orange };
+  --nuv-peach:            #{ $nuv-peach };
+  --nuv-pale-salmon:      #{ $nuv-pale-salmon };
+  --nuv-light-peach:      #{ $nuv-light-peach };
+  --nuv-steel:            #{ $nuv-steel };
+  --nuv-mid-blue:         #{ $nuv-mid-blue };
+  --nuv-dark-green-blue:  #{ $nuv-dark-green-blue };
+  --nuv-dark-navy-blue:   #{ $nuv-dark-navy-blue };
+  --nuv-mid-green:        #{ $nuv-mid-green };
+  --nuv-sea-green:        #{ $nuv-sea-green };
+  --nuv-light-blue-grey:  #{ $nuv-light-blue-grey };
+  --nuv-light-periwinkle: #{ $nuv-light-periwinkle };
+  --nuv-ice-blue:         #{ $nuv-ice-blue };
+  --nuv-off-white:        #{ $nuv-off-white };
+  --nuv-sky-blue:         #{ $nuv-sky-blue };
+  --nuv-near-black:       #{ $nuv-near-black };
+  --nuv-white:            #{ $nuv-white };
+  --nuv-black:            #{ $nuv-black };
+}

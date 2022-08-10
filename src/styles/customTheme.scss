@@ -1,0 +1,53 @@
+/* Custom theme file; Overwrites Bootstrap default variables. */
+@import "vars/colors";
+@import "vars/fonts";
+
+/* General */
+$enable-shadows:       true;
+$link-decoration:      none;
+
+/* Colors */
+$primary:              rgb(232, 115, 31); 	// $nuv-orange
+$secondary:            rgb(37, 55, 70); 	// $nuv-dark-navy-blue
+
+/* Body */
+$body-color:           $nuv-black;
+$body-bg:              $nuv-white;
+
+/* Type */
+$font-family-base:     $source-sans-pro-font-family;
+$headings-font-family: $georgia-font-family;
+$headings-font-style:  normal;
+$headings-font-weight: normal;
+$headings-color:       var(--nuv-black);
+
+// https://nekocalc.com/rem-to-px-converter
+$font-size-base:       1rem;					// 16px
+$font-size-sm:         $font-size-base * .875; 	// 14px
+$font-size-lg:         $font-size-base * 1.25;	// 20px
+
+$h1-font-size:         $font-size-base * 3.5;	// 56px
+$h2-font-size:         $font-size-base * 2.375;	// 38px
+$h3-font-size:         $font-size-base * 1.75;	// 28px
+$h4-font-size:         $font-size-base * 1.5;	// 24px
+$h5-font-size:         $font-size-base * 1.25;	// 20px
+$h6-font-size:         $font-size-base;			// 16px
+
+$headings-line-height: 1.2;
+
+$display-font-sizes:   (
+							   1: $h1-font-size,
+							   2: $h2-font-size,
+							   3: $h3-font-size,
+							   4: $h4-font-size,
+							   5: $h5-font-size,
+							   6: $h6-font-size
+					   );
+
+$display-font-weight:  normal;
+$display-line-height:  $headings-line-height;
+
+/* Buttons */
+$btn-border-radius:    0;
+$btn-border-radius-lg: 0;
+$btn-border-radius-sm: 0;

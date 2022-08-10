@@ -1,0 +1,19 @@
+@import "../../../node_modules/bootstrap/scss/mixins/buttons";
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../vars/colors";
+@import "../customTheme";
+
+a{
+  
+  &:hover{
+	color: lighten($primary, 15%);
+  }
+}
+
+a.link-contrasted{
+  color: lighten($primary, 30%);
+  
+  &:hover{
+	color: lighten($primary, 45%);
+  }
+}
