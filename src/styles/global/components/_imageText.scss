@@ -1,0 +1,14 @@
+.img-fluid {
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .center-responsive {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .img-fluid {
+    margin-top: 2rem;
+  }
+}
