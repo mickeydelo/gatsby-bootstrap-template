@@ -7,7 +7,7 @@ function ImageText (props) {
         <div class="col-md-7 order-md-2 center-responsive">
           <h2 class="featurette-heading">{props.header} <span class="text-muted">{props.subhead}</span></h2>
           <p class="lead">{props.copy}</p>
-          <button className={`${ props.btnStyle }`}>
+          <button className={`${ props.btnStyle }`} data-bs-toggle={`${ props.dataToggle }`} data-bs-target={`${ props.dataTarget }`}>
             {props.btnName}
           </button>
         </div>
