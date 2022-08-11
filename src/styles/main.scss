@@ -10,13 +10,18 @@
 @import "fonts/georgia";
 @import "fonts/source-sans-pro";
 @import 'global/typography.scss';
+@import 'global/responsive.scss';
 @import 'global/layout.scss';
-@import 'global/footer.scss';
-@import 'global/nav.scss';
 
 // /* Custom Components */
-@import "global/components/carousel";
-@import "global/components/imageText";
+@import 'global/components/footer.scss';
+@import 'global/components/nav.scss';
+
+// /* Custom Modules */
+@import "global/components/modules/carousel";
+@import "global/components/modules/image-text";
+@import "global/components/modules/features";
+@import "global/components/modules/hero";
 
 // /* Custom Classing and Util */
 @import 'ui/anchor.scss';

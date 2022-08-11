@@ -4,18 +4,31 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
 
 const SecondPage = () => {
   return (
   <Layout>
     <Seo title="Page two" />
 
-    <Button variant="primary">Primary</Button>
-
     <div className="container text-center my-5">
       <h1>Hi from the second page</h1>
       <p>Welcome to page 2</p>
       <Link to="/">Go back to the homepage</Link>
+
+      <Button variant="primary">Primary</Button>
+
+      <Card style={{ width: '18rem' }}>
+        <Card.Img variant="top" src="../images/3.png" />
+        <Card.Body>
+          <Card.Title>Card Title</Card.Title>
+          <Card.Text>
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </Card.Text>
+          <Button variant="primary">Go somewhere</Button>
+        </Card.Body>
+      </Card>
     </div>
 
     <div class="container px-4 py-5">

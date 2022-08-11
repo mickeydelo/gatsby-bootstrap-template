@@ -10,7 +10,9 @@ const IndexPage = () => {
   return (
     <Layout>
       <Seo title="Home" />
+      
       <Hero />
+      
       <section className="py-5 text-center container">
         <div className="row py-lg-5">
           <div className="col-lg-6 col-md-8 mx-auto">
@@ -31,6 +33,7 @@ const IndexPage = () => {
           <Link to="/page-2/" className="btn btn-secondary my-2">Go to page 2</Link>
         </div>
       </section>
+      
     </Layout>
   )
 }
