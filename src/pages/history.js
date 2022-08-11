@@ -8,13 +8,20 @@ import Seo from "../components/seo"
 import Carousel from "../components/modules/carousel"
 import Features from "../components/modules/features"
 import Modal from "../components/modules/modal"
-import ImageText  from "../components/modules/image-text"
+import ImageText from "../components/modules/image-text"
 
 const HistoryPage = () => {
+
+  const modalUrl = { 
+    google: 'http://google.com',
+    cnn: 'http://cnn.com',
+    yahoo: 'http://yahoo.com'
+  };
+
   return (
     <Layout>
       <Seo title="History" />
-      <Modal url="https://www.google.com" />
+      <Modal url={modalUrl.cnn} />
       <Carousel />
       <Features />
       <ImageText 

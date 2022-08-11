@@ -1,6 +1,6 @@
 import * as React from "react"
 
-function Modal (props) {
+function Modal ({ url }) {
   return (
     <>
       {/* External Modal */}
@@ -16,7 +16,7 @@ function Modal (props) {
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <a href={`${ props.url }`} target="_blank">
+              <a href={`${ url }`} target="_blank">
                 <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
               </a>
             </div>
